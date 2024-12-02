@@ -1,0 +1,19 @@
+---
+// Importar el componente CardSkill y los datos del JSON
+import CardSkill from '../components/CardSkills.astro';
+import skillsData from '../json/skills.json';
+
+---
+<div class="flex flex-col items-center justify-start pt-16">
+  <div class="max-w-3xl w-full px-6"> <!-- Igual que en Titulo.astro -->
+    <div class="grid grid-cols-4 gap-11 justify-items-center">
+      {skillsData.map((skill) => (
+        <CardSkill 
+          skillName={skill.skillName} 
+          class={skill.level === "high" ? "bg-green-300" : skill.level === "medium" ? "bg-orange-300" : ""}
+        />
+      ))}
+    </div>
+  </div>
+</div>
+

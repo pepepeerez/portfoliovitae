@@ -1,0 +1,14 @@
+---
+import Experiencia from '../components/Experiencia.astro'; // Importamos el componente individual
+import experienciaLab from '../json/experienciaLab.json'; // Importamos el archivo JSON con los datos
+---
+<section class="w-full">
+    {experienciaLab.map(estudio => (
+      <Experiencia 
+        empresa={estudio.Empresa}
+        periodo={estudio.Periodo}
+        trabajo={estudio.Trabajo}
+        descripcion={estudio.Descripcion}
+      />
+    ))}
+  </section>

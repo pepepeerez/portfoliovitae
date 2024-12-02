@@ -1,0 +1,23 @@
+---
+export interface Props {
+    imagen: string;
+    description: string;
+    name: string;
+    ocupation: string;
+}
+
+const { imagen, description, name, ocupation } = Astro.props;
+---
+<div class="max-w-3xl mx-auto px-6 flex flex-col items-center mt-12">
+    <div class="grid grid-cols-1 justify-items-center text-center">
+        
+        <img src={imagen} alt="LogoIcono" class="w-[190px] h-[190px] rounded-full shadow-lg mb-6" />
+        <!-- Detalles -->
+        <div class="mt-4">
+            <p class="text-black font-semibold text-[20px] mb-2">{description}</p>
+            <p class="font-medium text-black text-[17px] pt-6">{name}</p>
+            <p class="font-semibold text-[#DB972B] text-[17px] mb-16">{ocupation}</p>
+        </div>
+    </div>
+</div>
+

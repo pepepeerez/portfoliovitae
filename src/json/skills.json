@@ -1,0 +1,42 @@
+[
+    {
+        "skillName": "HTML",
+        "level": "high"
+    },
+    {
+        "skillName": "CSS",
+        "level": "high"
+    },
+    {
+        "skillName": "Tailwind",
+        "level": "high"
+    },
+    {
+        "skillName": "Java",
+        "level": "high"
+    },
+    {
+        "skillName": "JavaScript",
+        "level": "medium"
+    },
+    {
+        "skillName": "Git",
+        "level": "high"
+    },
+    {
+        "skillName": "GitHub",
+        "level": "high"
+    },
+    {
+        "skillName": "Astro",
+        "level": "medium"
+    },
+    {
+        "skillName": "React",
+        "level": "medium"
+    },
+    {
+        "skillName": "PHP",
+        "level": "medium"
+    }
+]

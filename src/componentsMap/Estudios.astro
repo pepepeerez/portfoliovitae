@@ -1,0 +1,15 @@
+---
+import Estudio from '../components/Estudio.astro'; // Importamos el componente individual
+import estudios from '../json/estudios.json'; // Importamos el archivo JSON con los datos
+---
+
+<section class="w-full">
+  {estudios.map(estudio => (
+    <Estudio 
+      duracion={estudio.periodo}
+      titulo={estudio.titulo}
+      institucion={estudio.institucion}
+      descripcion={estudio.descripcion}
+    />
+  ))}
+</section>

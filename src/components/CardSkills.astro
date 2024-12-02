@@ -1,0 +1,15 @@
+---
+export interface Props {
+    class?: string; // Clase personalizada opcional
+    skillName: string; // Nombre de la habilidad
+}
+
+const { class: customClass, skillName } = Astro.props;
+---
+
+<div class={`w-36 h-16 bg-gray-300 rounded-xl shadow-md p-4 text-black font-semibold hover:scale-110 transition-transform flex items-center justify-center  ${customClass}`}>
+  {skillName}
+</div>
+
+
+

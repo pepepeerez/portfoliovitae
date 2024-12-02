@@ -1,0 +1,27 @@
+---
+export interface Props {
+  duracion: string;
+  titulo: string;
+  institucion: string;
+  descripcion: string;
+}
+
+const { duracion, titulo, institucion, descripcion } = Astro.props;
+---
+<div class="flex justify-center items-center pt-16">
+    <div class="max-w-3xl w-full px-6">
+        <div class="flex items-start gap-6">
+        <div class="w-1/4 font-semibold text-lg text-[#656565] text-left flex-shrink-0">
+            <span class="block mt-1">{duracion}</span>
+        </div>
+        <div class="w-3/4">
+            <h3 class="text-2xl font-bold mb-2">{titulo}</h3>
+            <p class="font-bold mb-1 text-[#DB972B]">{institucion}</p>
+            <p class="text-black text-[18px] pt-5">{descripcion}</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+  
+  

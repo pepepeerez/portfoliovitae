@@ -1,0 +1,52 @@
+---
+import CardSkills from "../components/CardSkills.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
+import Navegador from "../components/Navegador.astro";
+import Projects from "../components/Project"; // Asegúrate de que "Projects" es el componente correcto para mostrar la lista.
+import SobreMi from "../components/SobreMi.astro";
+import Titulo from "../components/Titulo.astro";
+import Estudios from "../componentsMap/Estudios.astro";
+import Experiencias from "../componentsMap/Experiencias.astro";
+import Referencias from "../componentsMap/Referencias.astro";
+import Skills from "../componentsMap/Skills.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Portfolio de Pepe">
+  <!-- Navegación -->
+  <Navegador/>
+
+  <!-- Sobre mí -->
+  <SobreMi />
+
+  <!-- Estudios -->
+  <Titulo id="estudios" titulo="Estudios" icono="../../img/book_3_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+  <Estudios />
+
+  <!-- Skills -->
+  <Titulo id="skills" class="mt-44" titulo="My Skills" icono="../../img/star.png" />
+  <Skills />
+
+  <!-- Experiencia -->
+  <Titulo id="experiencia" class="mt-44" titulo="Experiencia Laboral" icono="../../img/maletin.png.png" />
+  <Experiencias />
+
+  <!-- Proyectos -->
+  <Titulo id="proyectos" class="mt-40" titulo="Proyectos" icono="../../img/zip.png" />
+  <div class="mt-10 px-6">
+    <Projects client:only="react" /> <!-- Usamos el componente dinámico para proyectos -->
+  </div>
+
+  <!-- Referencias -->
+  <Titulo id="referencias" class="mt-40" titulo="Referencias" icono="../../img/boy.png" />
+  <h2 class="text-2xl font-semibold text-center text-[#656565] pt-20">La gente con la que he trabajado ha dicho...</h2>
+  <Referencias />
+
+  <!-- Contacto -->
+  <Titulo id="contacto" class="mt-36" titulo="Contacto" icono="../../img/contacto.png" />
+  <Contacto />
+
+  <!-- Footer -->
+  <Footer />
+</Layout>

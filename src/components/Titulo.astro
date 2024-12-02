@@ -1,0 +1,22 @@
+---
+export interface Props {
+  class?: string; // Clase personalizada
+  titulo: string; 
+  icono: string;  
+  id?: string; // ID personalizada
+}
+
+const { class: customClass, titulo, icono, id } = Astro.props;
+---
+
+<div id={id} class={`flex items-center justify-center ${customClass}`}>
+  <div class="max-w-3xl w-full px-6">
+    <h2 class="text-4xl font-bold flex items-center">
+      <span class="text-5xl">
+        <img src={icono} alt="LogoIcono" class="w-12 h-12" />
+      </span>
+      <span class="ml-4">{titulo}</span>
+    </h2>
+  </div>
+</div>
+

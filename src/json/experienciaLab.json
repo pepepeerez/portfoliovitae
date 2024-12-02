@@ -1,0 +1,14 @@
+[
+    {
+        "Empresa": "CloudForce",
+        "Periodo": "2022 - 2023",
+        "Trabajo": "Practicante en Desarrollo de Aplicaciones Web",
+        "Descripcion": "Realicé prácticas en el departamento de desarrollo, donde trabajé en la creación de una aplicación interna para la gestión de recursos humanos. Implementé funcionalidades de back-end en Node.js y trabajé con bases de datos SQL para almacenar y manipular datos."
+    },
+    {
+        "Empresa": "TechLab Innovación",
+        "Periodo": "2023 - Actual",
+        "Trabajo": "Desarrolador Web Junior",
+        "Descripcion": "Trabajé en un equipo de desarrollo web para implementar y optimizar aplicaciones orientadas a la gestión de proyectos. Colaboré en la creación de componentes reutilizables en JavaScript y CSS para mejorar la eficiencia y el rendimiento en front-end. Participé en reuniones de planificación y contribuí con ideas para la mejora de la experiencia de usuario. Además, realicé pruebas de control de calidad para asegurar la funcionalidad de las aplicaciones en distintos navegadores."
+    }
+]

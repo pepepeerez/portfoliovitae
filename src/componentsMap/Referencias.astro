@@ -1,0 +1,15 @@
+---
+import CardReferencia from '../components/CardReferencia.astro'; 
+import referencias from '../json/referencias.json'; 
+---
+
+<section class="w-full">
+    {referencias.map(referencia => (
+        <CardReferencia 
+            imagen={referencia.img}
+            description={referencia["descripción"]}
+            name={referencia.Nombre}
+            ocupation={referencia.Ocupacion}
+        />
+    ))}
+</section>

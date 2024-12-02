@@ -1,0 +1,54 @@
+---
+import ProjectList from "../components/Project";
+---
+
+<section id="PROJECTS" class="relative flex items-center justify-center min-h-screen py-12 px-6">
+  <!-- Título de la sección -->
+  <h2 
+    id="projects-title" 
+    class="text-5xl font-extrabold text-gray-800 mb-4 opacity-100 transform translate-x-0 transition-all duration-1000"
+  >
+    PROJECTS
+  </h2>
+
+  <!-- Línea decorativa -->
+  <div class="flex flex-col items-center">
+    <div class="w-16 h-1 bg-blue-500 mb-8"></div>
+  </div>
+
+  <!-- Componente de lista de proyectos -->
+  <ProjectList client:only="react" />
+</section>
+
+<style>
+  /* Estilo para la sección de proyectos */
+  #PROJECTS {
+    min-height: 100vh; /* Altura mínima de la sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra contenido verticalmente */
+    align-items: center; /* Centra contenido horizontalmente */
+    padding-top: 4rem; /* Espacio desde la parte superior */
+  }
+
+  /* Estilo para el título */
+  #projects-title {
+    text-align: center;
+  }
+
+  /* Línea decorativa debajo del título */
+  #projects-title + .w-16 {
+    margin-left: 0;
+  }
+
+  /* Ajustes responsivos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    #PROJECTS {
+      padding-top: 2.5rem;
+    }
+
+    #projects-title {
+      font-size: 3rem; /* Reduce tamaño del título */
+    }
+  }
+</style>

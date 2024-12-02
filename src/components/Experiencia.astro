@@ -1,0 +1,24 @@
+---
+export interface Props {
+    empresa: String,
+    periodo: String,
+    trabajo: String,
+    descripcion: String
+}
+
+const { empresa, periodo, trabajo, descripcion } = Astro.props;
+---
+<div class="max-w-3xl w-full mx-auto px-6 flex flex-col mb-8">
+    <div class="flex justify-between items-start pt-16">
+        <!-- Nombre de la empresa -->
+        <p class="font-bold text-lg text-gray-700">{empresa}</p>
+        <!-- Duración -->
+        <p class="text-sm text-gray-500">{periodo}</p>
+    </div>
+    <!-- Puesto -->
+    <p class="font-bold text-[#DB972B]">{trabajo}</p>
+    <!-- Descripción -->
+    <p class="text-gray-700 text-base mt-2">{descripcion}</p>
+</div>
+
+
